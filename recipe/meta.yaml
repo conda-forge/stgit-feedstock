@@ -1,5 +1,5 @@
 {% set name = "stgit" %}
-{% set version = "2.4.7" %}
+{% set version = "2.4.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/stacked-git/stgit/archive/v{{ version }}.tar.gz
-  sha256: 087ec6b4aec92522687ede9fb249c98ac49e183f8bdd58c8015deaf69919d7e3
+  sha256: ce6d893227e4436d6067bcf2e6f93a3924b93c46edca2888e831cc8a48a1d276
 
 build:
   number: 0
@@ -35,7 +35,7 @@ test:
 about:
   home: https://stacked-git.github.io
   license: GPL-2.0-only
-  license_file: 
+  license_file:
     - COPYING
     - THIRDPARTY.yml
   summary: Manage Git commits as a stack of patches
