@@ -1,12 +1,12 @@
-{% set name = "stgit" %}
-{% set version = "2.4.12" %}
+context:
+  version: 2.4.12
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: stgit
+  version: ${{ version }}
 
 source:
-  url: https://github.com/stacked-git/stgit/archive/v{{ version }}.tar.gz
+  url: https://github.com/stacked-git/stgit/archive/v${{ version }}.tar.gz
   sha256: ce6d893227e4436d6067bcf2e6f93a3924b93c46edca2888e831cc8a48a1d276
 
 build:
@@ -14,9 +14,9 @@ build:
 
 requirements:
   build:
-    - {{ compiler('rust') }}
-    - {{ compiler('c') }}
-    - {{ stdlib('c') }}
+    - ${{ compiler('rust') }}
+    - ${{ compiler('c') }}
+    - ${{ stdlib('c') }}
     - cargo-bundle-licenses
     - make
     - pkg-config
@@ -28,18 +28,18 @@ requirements:
   run:
     - git
 
-test:
-  commands:
-    - stg --help
+tests:
+  - script:
+      - stg --help
 
 about:
-  home: https://stacked-git.github.io
   license: GPL-2.0-only
   license_file:
     - COPYING
     - THIRDPARTY.yml
   summary: Manage Git commits as a stack of patches
-  dev_url: https://github.com/stacked-git/stgit
+  homepage: https://stacked-git.github.io
+  repository: https://github.com/stacked-git/stgit
 
 extra:
   recipe-maintainers:
