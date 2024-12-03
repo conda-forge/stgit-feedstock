@@ -2,6 +2,9 @@
 
 set -o xtrace -o nounset -o pipefail -o errexit
 
+export CARGO_PROFILE_RELEASE_STRIP=symbols
+export CARGO_PROFILE_RELEASE_LTO=fat
+
 # check licenses
 cargo-bundle-licenses \
     --format yaml \
@@ -18,8 +21,5 @@ if [[ ${build_platform} == ${target_platform} ]]; then
     stg completion fish > ${PREFIX}/share/fish/vendor_completions.d/stg.fish
     stg completion zsh > ${PREFIX}/share/zsh/site-functions/_stg
 fi
-
-# strip debug symbols
-"$STRIP" "$PREFIX/bin/stg"
 
 make -C contrib prefix=${PREFIX} all

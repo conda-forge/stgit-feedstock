@@ -3,7 +3,7 @@ About stgit-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stgit-feedstock/blob/main/LICENSE.txt)
 
-Home: https://stacked-git.github.io
+Home: https://stacked-git.github.io/
 
 Package license: GPL-2.0-only
 
@@ -15,14 +15,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>Travis</td>
-    <td>
-      <a href="https://app.travis-ci.com/conda-forge/stgit-feedstock">
-        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/stgit-feedstock/main.svg?label=Linux">
-      </a>
-    </td>
-  </tr>
+<table>
     
   <tr>
     <td>Azure</td>
