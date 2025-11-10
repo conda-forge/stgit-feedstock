@@ -1,5 +1,5 @@
 context:
-  version: "2.5.4"
+  version: "2.5.5"
 
 package:
   name: stgit
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/stacked-git/stgit/archive/v${{ version }}.tar.gz
-  sha256: cae61785a59e9e0ac85045e41eb8e0ccfd831d6f67d16941e53bcf4a856cec5f
+  sha256: de9ff92975f047a255cfe1dc8e0470c33e70fb9d8f1ec622205920735eea30ce
 
 build:
   number: 0
