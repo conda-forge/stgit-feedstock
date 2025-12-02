@@ -24,6 +24,7 @@ requirements:
     - curl
     - git
     - libcurl
+    - openssl
     - zlib
   run:
     - git
