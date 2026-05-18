@@ -5,7 +5,7 @@
 
 [workspace]
 name = "stgit-feedstock"
-version = "3.53.3"  # conda-smithy version used to generate this file
+version = "3.61.2"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/stgit-feedstock"
 authors = ["@conda-forge/stgit"]
 channels = ["conda-forge"]
