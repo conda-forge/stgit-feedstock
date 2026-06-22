@@ -10,6 +10,8 @@ curl:
 - '8'
 libcurl:
 - '8'
+openssl:
+- '3.5'
 rust_compiler:
 - rust
 target_platform:
